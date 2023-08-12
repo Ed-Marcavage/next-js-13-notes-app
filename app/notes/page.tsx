@@ -1,7 +1,7 @@
 // import PocketBase from 'pocketbase';
 import Link from 'next/link';
 import styles from './Notes.module.css';
-// import CreateNote from './Create';
+import CreateNote from './CreateNote';
 
 async function getNotes() {
     // const db = new PocketBase('http://127.0.0.1:8090');
@@ -25,7 +25,7 @@ export default async function NotesPage() {
                 })}
             </div>
 
-            {/* <CreateNote /> */}
+            <CreateNote />
         </div>
     );
 }
